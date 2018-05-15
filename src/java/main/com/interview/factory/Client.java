@@ -22,7 +22,11 @@ public class Client {
 	public static void main(String[] args) {
 		ShapeFactory sf = new ShapeFactory();
 		Shape s= sf.getFactoryObject("circle");
+		if (s!=null) {
         s.draw();
+		}else {
+			System.out.println("Please enter valid object name");
+		}
 	}
 
 }
